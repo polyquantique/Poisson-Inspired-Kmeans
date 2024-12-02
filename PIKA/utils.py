@@ -21,7 +21,7 @@ def deltaPoissonDn(
       freqDel,
       mu
    ):
-   x = (nDel * freqDel) / (mu * (freqAdd + 1)) + EPS
+   x = (nDel * freqDel) / (mu * (freqAdd + 1))
    return np.log(x)
 
 
@@ -31,7 +31,7 @@ def deltaPoissonUp(
       freqDel,
       mu
    ):
-   x = (mu * freqDel) / ((nDel + 1) * (freqAdd + 1)) + EPS
+   x = (mu * freqDel) / ((nDel + 1) * (freqAdd + 1))
    return np.log(x)
 
 
